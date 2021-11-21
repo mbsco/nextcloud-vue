@@ -164,5 +164,8 @@
 	},
 	"browserslist": [
 		"extends @nextcloud/browserslist-config"
-	]
+	],
+	"publishConfig": {
+		"registry": "https://nexus.mbsco.ir/repository/npm/"
+	}
 }
