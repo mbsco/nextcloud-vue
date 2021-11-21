@@ -68,7 +68,7 @@ export default {
 
 	computed: {
 		needsTruncate() {
-			return this.name && this.name.length >= 10
+			return this.name && this.name.length >= 100
 		},
 		/**
 		 * Index at which to split the name if it is longer than 10 characters.
@@ -76,8 +76,8 @@ export default {
 		 * @returns {Integer} The position at which to split
 		 */
 		split() {
-			// leave maximum 10 letters
-			return this.name.length - Math.min(Math.floor(this.name.length / 2), 10)
+			// leave maximum 100 letters
+			return this.name.length - Math.min(Math.floor(this.name.length / 2), 100)
 		},
 		part1() {
 			if (this.needsTruncate) {
